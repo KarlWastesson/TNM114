@@ -5,7 +5,7 @@ using System.Linq;
 
 public class HiddenMarkovModel : MonoBehaviour
 {
-    // Define the states and observations
+    
     public List<Vector2Int> states; // A list of possible positions (x, y) on the grid.
     public List<Vector2Int> observations; // A list of possible observations.
 
@@ -74,7 +74,6 @@ public class HiddenMarkovModel : MonoBehaviour
             {
                 int cell = PlayfieldGenerator.Map[y, x];
 
-                // Assuming 0 represents an empty cell
                 if (!(cell == 1))
                 {                    
                     states.Add(new Vector2Int(x, y));

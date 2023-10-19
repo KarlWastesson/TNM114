@@ -28,7 +28,7 @@ public class PacManScript : MonoBehaviour
     {
         MovePacMan();
         pacManPosition = new Vector2Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(-transform.position.y));
-        // Update Pac-Man logic here if needed
+        
     }
 
     void MovePacMan()

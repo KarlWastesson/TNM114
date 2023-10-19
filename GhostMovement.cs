@@ -91,7 +91,7 @@ public class GhostMovement : MonoBehaviour
 
     bool IsAligned(Vector3 position1, Vector3 position2)
     {
-        float threshold = 0.1f; // You can adjust this value as needed
+        float threshold = 0.1f; // Adjust this value as needed
         bool xAligned = Mathf.Abs(position1.x - position2.x) < threshold;
         bool yAligned = Mathf.Abs(position1.y - position2.y) < threshold;
         return (xAligned || yAligned);
